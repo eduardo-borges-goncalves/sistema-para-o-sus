@@ -1,0 +1,458 @@
+@import url('https://fonts.googleapis.com/css2? family = Roboto: ital, wght @ 0,100; 0,300; 0,400; 0,500; 0,700; 0,900; 1,100; 1,300; 1,400; 1,500; 1,700; 1.900 & display = swap ');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: rgba(210, 212, 223, 0.37);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+h1 {
+  margin-top: 14vh;
+  margin-bottom: 4vh;
+  text-align: center;
+  color: rgb(13, 75, 54);
+}
+  
+button {
+  background-color: rgb(65, 95, 141);
+  border-color: transparent;
+  color: white;
+  padding: 7px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 12pt;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+button:hover {
+  background-color: rgba(43, 94, 170, 0.856);
+  transition: all 0.2s ease-out;
+}
+
+a{
+  color: #22623d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #158f48;
+  transition: all .2s ease-out;
+}
+
+
+.sideBar {
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: 1%;
+  flex-wrap: wrap;
+
+  width: 100%;
+  height: 48px;
+  background-color:rgba(43, 94, 170, 0.856);
+  box-shadow: 0px 1px 10px 0px #00000070;
+  z-index: 1;
+}
+
+.divSideBarBut {
+  display: flex;
+
+  margin-right: 2%;
+  z-index: 3;
+}
+
+.sideBarBut {
+  display: flex;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  padding: 5px;
+  font-size: 10pt;
+  cursor: pointer;
+  outline: none;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.iconImg {
+  width: 20px;
+}
+
+.mobile-menu div {
+  width: 24px;
+  height: 3px;
+  background: #fff;
+  margin: 3px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  box-shadow: 0px 5px 10px 0px #00000070;
+}
+
+.nav-list li {
+  letter-spacing: 1px;
+}
+
+@media{
+  body {
+    overflow-x: hidden; 
+  }
+  .nav-list {
+    position: absolute;
+    top: 48px;
+    width: 45vh;
+    height: 92vh;
+    background-color: rgba(232, 234, 243, 0.575);
+    flex-direction: column;
+    transform: translateX(-150%);
+    transition: transform 0.3s ease-in;
+  }
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+  display: block; 
+}
+
+.menuBut {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  padding: 5px;
+  font-size: 10pt;
+  cursor: pointer;
+  outline: none;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 0;
+}
+
+.sub-list {
+  flex-direction: column;
+  list-style: none;
+  transition: transform 0.3s ease-in;
+  margin-left: 4vh;
+ 
+}
+
+.sub-list li {
+margin-top: 0.5vh;
+}
+
+.menu-element {
+border-radius: 3px;
+padding: 5px;
+}
+
+.menu-element:hover {
+  background-color: rgba(201, 206, 219, 0.507);
+  box-shadow: 1px 1px 2px 1px rgba(45, 46, 94, 0.699);
+  
+  }
+
+.menu-element-level-one {
+font-weight: bold;
+flex-direction: column;
+list-style: none;
+color: rgb(61, 61, 61);
+background-color: rgb(231, 235, 245);
+border-radius: 3px;
+padding: 12px;
+height: 12vh;
+width: 100%;
+}
+
+.menu-element-level-one button{
+margin-top: 1vh;
+font-weight: bold;
+font-size: 16pt;
+flex-direction: column;
+color: rgb(61, 61, 61);
+background-color: transparent;
+letter-spacing: 1px;
+}
+
+.menu-element-level-one button:hover {
+color: #123872;
+transition: transform 0.3s ease-in-out;
+}
+
+.menu-element-level-one a {
+color: rgb(61, 61, 61);
+margin-left: 6px;
+}
+
+.menu-element-level-one a:hover {
+color: #123872;
+transition: transform 0.3s ease-in-out;
+}
+
+div#sub-list {
+transform: translateX(-150%);
+}
+  
+/** Solicitations **/
+
+.sol {
+  left: 16px;
+  margin-right: 16px;
+  position: relative;
+  padding-top: 13px;
+  margin-top: 2px;
+  padding-bottom: 8px;
+}
+
+main {
+  display: flex;
+  flex-direction: column ;
+  flex-wrap: wrap;
+  margin: auto;
+}
+
+form {
+  max-width: 900px;
+  width: 90%;
+  margin:auto;
+}
+
+textarea {
+
+  width: 100%;
+}
+
+.top {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 20vh;
+  background-color: rgba(197, 197, 206, 0.349);
+  padding: 6px;
+}
+
+fieldset {
+  border: 1px solid rgba(0, 0, 0, 0.555);
+  margin-bottom: 1vh;
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 10vh;
+  background-color: rgba(197, 197, 206, 0.349);
+  padding: 6px;
+  padding-bottom: 10px;
+  box-shadow: 0px 6px 6px -6px rgb(0, 0, 0);
+}
+
+input {
+  border: transparent;
+  border-bottom: 1px solid #0D559A;
+  background-color: transparent;
+  outline: none;
+  box-shadow: 0px 6px 6px -6px rgb(0, 0, 0);
+}
+
+label {
+  font-size: 16px;
+  position: absolute;
+  color: rgb(3, 3, 3);
+  left: 0;
+  pointer-events: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.sol input:focus + label, 
+.sol input:valid + label {
+  font-size: 13px;
+  top: 0;
+  color: #22623d;
+}
+
+.sol input:focus, 
+.sol input:valid {
+  border-bottom: 1px solid #148dfd;
+}
+
+#surnameSol {
+  width: 400px;
+}
+
+#ageSol {
+  width: 50px;
+}
+
+#CRMSol {
+  width: 100px;
+}
+
+.class-1 {
+  width: 80px;
+}
+
+.class-2 {
+  width: 120px;
+}
+
+.sol textarea:focus + label, 
+.sol textarea:valid + label {
+  font-size: 13px;
+  top: 0;
+  color: #22623d;
+}
+
+.formBut {
+  background-color: rgb(40, 160, 120);
+  border-radius: 1px;
+  width: 200px;
+  margin-bottom: 50px;
+  margin-top: 2vh;
+  padding: 4px;
+  letter-spacing: 1px;
+  box-shadow: 0px 6px 6px -6px rgb(0, 0, 0);
+}
+
+#divBut {
+  margin: auto;
+  max-width: 900px;
+  width: 90%;
+}
+
+button {
+  background-color: rgb(65, 95, 141);
+  border-color: transparent;
+  color: white;
+  padding: 4px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 12pt;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+  letter-spacing: 1px;
+}
+
+button:hover {
+  background-color: rgba(43, 94, 170, 0.856);
+  transition: all 0.2s ease-out;
+}
+
+#fieldClassification, #fieldOrigem {
+  padding: 0;
+  background-color: rgba(255, 255, 255, 0);
+  border: none;
+  flex-direction: column;
+  width: 250px;
+  box-shadow: none;
+  margin-bottom: 0;
+  justify-content: center;
+}
+
+#fieldOrigem {
+  background-color: rgba(255, 255, 255, 0);
+  width: 300px;
+ }
+
+#fieldTwoBlocks {
+  padding: 16px;
+  flex-direction: row;
+  justify-content:space-around;
+  align-items: center;
+  /*background-color: rgba(255, 255, 255, 0);
+  box-shadow: none;
+  border: none;*/
+}
+
+#lastField {
+  
+  justify-content: center;
+  
+}
+
+#checkBoxDiv {
+  margin: auto;
+  position: relative;
+  font-size: 16px;
+}
+
+#especialidadeDiv, #tipoDeExameDiv {
+  position: relative;
+  margin: auto;
+  margin-left: 0;
+  padding: 0pt;
+  display: none;
+  transition: .3s ease-in-out;
+  margin-top: 16px;
+  margin-bottom: 16px;
+  padding-top: 13px;
+}
+
+#especialidadeDiv label {
+  font-size: 13px;
+  top: 0px;
+  color: #22623d;
+}
+
+#tipoDeExameDiv label {
+  font-size: 13px;
+  top: 0px;
+  color: #22623d;
+}
+
+#checkBoxDiv2 {
+  position: relative;
+  
+  margin-top: 16px;
+  width: 150px;
+  height: 90px;
+  font-size: 13px;
+  background-color: white;
+  padding: 15px;
+  margin-bottom: 16px;
+  border-radius: 10px;
+  box-shadow: 2px 1px 3px 1px rgba(37, 30, 16, 0.301);
+}
+
+#checkBoxDiv2 span {
+  color: rgb(17, 153, 17);
+  pointer-events: none;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: white;
+  border-radius: 10px;
+  padding: 10pt;
+}
+
+
+
+
+
+
+
+
+/** allign-content 
+ background-color: rgba(175, 175, 175, 0.493);
+
+**/
+

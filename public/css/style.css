@@ -1,0 +1,381 @@
+@import url ('https://fonts.googleapis.com/css2? family = Roboto: ital, wght @ 0,100; 0,300; 0,400; 0,500; 0,700; 0,900; 1,100; 1,300; 1,400; 1,500; 1,700; 1.900 & display = swap ');
+
+/** 
+  colors:
+
+  rgb(40, 160, 120)
+  
+**/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  
+  background-color: rgba(210, 212, 223, 0.37);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+.card {
+  background-color: #ffffff80;
+  padding: 30px;
+  border-radius: 1%;
+  box-shadow: 3px 3px 5px 0px #00000070;
+}
+
+h1 {
+  margin-top: 25px;
+  text-align: center;
+  color: rgb(13, 75, 54);
+}
+
+h1#entrar {
+  text-align: center;
+  margin-bottom: 20px;
+  color: rgb(13, 75, 54);
+}
+
+.label-float input {
+  width: 100%;
+  padding: 5px 5px;
+  display: inline-block;
+  border: 0;
+  border-bottom: 1px solid rgb(13, 75, 54);
+  background-color: transparent;
+  outline: none;
+  min-width: 180px;
+  font-size: 16px;
+  transition: all 0.3s ease-out;
+  border-radius: 0;
+}
+
+.label-float {
+  position: relative;
+  padding-top: 13px;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+
+.label-float input:focus{
+  border-bottom: 1px solid #22623d;
+}
+
+.label-float label{
+  color: #123872;
+  pointer-events: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-top: 13px;
+  transition: all 0.3s ease-out;
+}
+
+.label-float input:focus + label, 
+.label-float input:valid + label {
+  font-size: 13px;
+  margin-top: 0;
+  color: #22623d;
+
+}
+
+button {
+  background-color: rgb(65, 95, 141);
+  border-color: transparent;
+  color: white;
+  padding: 7px;
+  margin-top: 20px;
+  font-weight: bold;
+  font-size: 12pt;
+  border-radius: 2px;
+  cursor: pointer;
+  outline: none;
+  width: 100%;
+}
+
+button:hover {
+  background-color: rgba(43, 94, 170, 0.856);
+  transition: all 0.2s ease-out;
+}
+
+.justify-center {
+  display: flex;
+  justify-content: center;
+}
+
+hr {
+  margin-top: 10%;
+  margin-bottom: 10%;
+  width: 60%;
+}
+
+p {
+  color: #123872;
+  font-size: 14pt;
+  text-align: center;
+}
+
+a{
+  color: #22623d;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #158f48;
+  transition: all .2s ease-out;
+}
+
+.fa-eye {
+  position: absolute;
+  top: 15px;
+  right: 10px;
+  cursor: pointer;
+  color: #123872;
+}
+
+
+/** Cad Style - Estilo do Cadastro**/
+
+.cardCad {
+  background-color: #ffffff80;
+  padding: 30px;
+  border-radius: 1%;
+  box-shadow: 3px 3px 5px 0px #00000070;
+  width: 400px;
+}
+
+.msgError {
+  color: red ;
+  padding: auto;
+  margin-top: 10px;
+  text-align: center;
+
+}
+
+.msgSuccess {
+  color: rgb(18, 214, 18) ;
+  padding: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+
+/** Inicial Area Style - Estilo da página inicial**/
+
+/**header {
+  position: fixed;
+  top: 0px;
+  left: 0%;
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: 1%;
+  flex-wrap: wrap;
+
+  width: 100%;
+  height: 48px;
+  box-shadow: 0px 1px 10px 0px #00000070;
+  z-index: 1;
+}**/
+
+.sideBar {
+  position: absolute;
+  top: 0px;
+  left: 0%;
+  display: flex;
+  justify-content: space-between;
+  padding-inline-start: 1%;
+  flex-wrap: wrap;
+
+  width: 100%;
+  height: 48px;
+  background-color:rgba(43, 94, 170, 0.856);
+  box-shadow: 0px 1px 10px 0px #00000070;
+  z-index: 1;
+}
+
+.divSideBarBut {
+  display: flex;
+
+  margin-right: 2%;
+  z-index: 3;
+}
+
+.sideBarBut {
+  display: flex;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  padding: 5px;
+  font-size: 10pt;
+  cursor: pointer;
+  outline: none;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  
+}
+
+.iconImg {
+  width: 20px;
+}
+
+.toolBar {
+  display: flex;
+  margin-top: 48px;
+  background-color: rgb(255, 255, 255);
+  max-width: 960px;
+  text-align: center;
+  height: 500px;
+  margin-bottom: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.toolBar > h1 {
+  padding: 50px;
+  
+}
+
+.mobile-menu div {
+  width: 24px;
+  height: 3px;
+  background: #fff;
+  margin: 3px;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  box-shadow: 0px 5px 10px 0px #00000070;
+}
+
+.nav-list li {
+  letter-spacing: 1px;
+  
+
+}
+
+@media {
+  body {
+    overflow-x: hidden; 
+  }
+  .nav-list {
+    position: absolute;
+    top: 48px;
+    width: 45vh;
+    height: 92vh;
+    background-color: rgba(232, 234, 243, 0.575);
+    flex-direction: column;
+    transform: translateX(-150%);
+    transition: transform 0.3s ease-in;
+  }
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+  display: block; 
+}
+
+.menuBut {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  background-color: transparent;
+  padding: 5px;
+  font-size: 10pt;
+  cursor: pointer;
+  outline: none;
+  align-items: center;
+  margin-top: auto;
+  margin-bottom: auto;
+  left: 0;
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+
+/** menu lateral **/
+
+
+.sub-list {
+  flex-direction: column;
+  list-style: none;
+  transition: transform 0.3s ease-in;
+  margin-left: 4vh;
+ 
+}
+
+.sub-list li {
+margin-top: 0.5vh;
+}
+
+.menu-element {
+border-radius: 3px;
+padding: 5px;
+}
+
+.menu-element:hover {
+background-color: rgba(201, 206, 219, 0.507);
+box-shadow: 1px 1px 2px 1px rgba(45, 46, 94, 0.699);
+
+}
+
+.menu-element-level-one {
+font-weight: bold;
+flex-direction: column;
+list-style: none;
+color: rgb(61, 61, 61);
+background-color: rgb(231, 235, 245);
+border-radius: 3px;
+padding: 12px;
+height: 12vh;
+width: 100%;
+
+}
+
+.menu-element-level-one button{
+margin-top: 1vh;
+font-weight: bold;
+font-size: 16pt;
+flex-direction: column;
+color: rgb(61, 61, 61);
+background-color: transparent;
+letter-spacing: 1px;
+}
+
+.menu-element-level-one button:hover {
+color: #123872;
+transition: transform 0.3s ease-in-out;
+}
+
+.menu-element-level-one a {
+color: rgb(61, 61, 61);
+margin-left: 6px;
+}
+
+.menu-element-level-one a:hover {
+color: #123872;
+transition: transform 0.3s ease-in-out;
+}
+
+div#sub-list {
+transform: translateX(-150%);
+}

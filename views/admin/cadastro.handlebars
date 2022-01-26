@@ -1,0 +1,62 @@
+<form action="/admin/teste" method="POST">
+    <div class="container">
+        <div class="cardCad">
+            <h1>
+                Cadastrar
+            </h1>
+            <div id="msgError" class="msgError" > </div>
+            <div id="msgSuccess" class="msgSuccess" > </div>
+            <div class="label-float">
+                <input type="text" id="userCad" name="userCad" placeholder="" required>
+
+                <label for="userCad" id="userCadLabel">Usuário</label>
+            </div>
+
+            <div class="label-float">
+                <input type="text" name="nameCad" id="nameCad" placeholder="" required>
+
+                <label for="nameCad" id="nameCadLabel">Nome</label>
+            </div>
+
+            <div class="label-float">
+                <input type="password" name="passwordCad" id="passwordCad" placeholder="" required>
+
+                <label for="passwordCad" id="passwordCadLabel">Senha</label>
+
+                <i id="seePasswordCad" class="fa fa-eye" aria-hidden="true"></i>
+            </div>
+
+            <div class="label-float">
+                <input type="password" name="confirmPasswordCad" id="confirmPasswordCad" placeholder="" required>
+
+                <label for="confirmPasswordCad" id="confirmPasswordCadLabel">Confirmar Senha</label>
+
+                <i id="seeConfirmPasswordCad" class="fa fa-eye" aria-hidden="true" ></i>
+
+            </div>
+
+            <div class="label-float">
+                <input type="text" name="cpfCad" id="cpfCad" placeholder="" required>
+
+                <label for="cpfCad" id="cpfCadLabel">CPF</label>
+            </div>
+            
+            <div class="label-float">
+                <input type="text" name="addressCad" id="addressCad" placeholder="" required>
+
+                <label for="addressCad" id="addressCadLabel">Endereço</label>
+            </div>
+
+            <div class="label-float">
+                <button type="submit" onclick="inputsAreOk()">Cadastrar</button>
+            </div>
+
+        </div>
+    </div>
+</form>
+
+
+<script src="/js/script-cad.js"></script>
+
+
+    

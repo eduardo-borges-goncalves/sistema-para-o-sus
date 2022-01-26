@@ -1,0 +1,221 @@
+<link rel="stylesheet" href="/css/solicitations-style.css">
+
+<header>
+  <div class="sideBar">
+        
+    <div id="menuSideBar" class="">
+      <nav>
+        <button class="menuBut" onclick="mobileMenu()">
+            <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            </div>
+        </button>
+              
+        <ul class="nav-list" id="nav-list">
+          <li  class="menu-element-level-one"id="menu-level-one">
+            <button onclick="levelOneMenu()">
+              Atendimento
+            </button>
+            <div id="sub-list">
+              <ul class="sub-list">
+                <li class= "menu-element"><a href="">Agendamentos</a></li>
+                <li class= "menu-element"><a href="/admin/solicitations">Solicitações</a></li>
+                <li class= "menu-element"><a href="/admin/authorize">Autorizar</a></li>
+                <li class= "menu-element"><a href="">Agendar</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="divSideBarBut">
+      <button value="" class="sideBarBut">
+        <img src="icons/architecture_building_home_house_property_icon_123288.ico" alt="" >
+      </button>
+      <button onclick="sair()" class="sideBarBut">
+        SAIR
+      </button>
+      </div>
+    
+  </div>
+</header>
+<main>
+  <h1 >
+        Solicitar Consulta ou Exame
+  </h1>
+
+  <form action="/admin/solicitar" method="POST">
+  <fieldset class="top">
+    <div class="sol">
+      <input type="text" name="nameSol" id="nameSol" placeholder="" required>
+      <label for="nameSol">Nome:</label>
+    </div> 
+
+    <div class="sol">
+      <input type="text" name="surnameSol" id="surnameSol" placeholder="" required>
+      <label for="surnameSol">Sobrenome:</label>
+    </div> <br><br>
+
+    <div class="sol">
+      <input type="date" name="birthdaySol" id="birthdaySol">
+      <label for="birthdaySol">Data de Nascimento:</label>
+    </div>
+
+    <div class="sol">
+      <input type="number" name="cnsSol" id="cnsSol" placeholder="" required>
+      <label for="cnsSol">CNS:</label>
+    </div>
+
+    <div class="sol">
+      <input type="tel" name="whatsappSol" class="class-2">
+      <label for="whatsappSol">WhatsApp:</label>
+    </div>
+
+    <div class="sol">
+      <input type="tel" name="phoneSol" id="phoneSol" class="class-2">
+      <label for="telefoneSol">Telefone:</label>
+    </div>
+
+    <div class="sol">
+      <input type="number" name="ageSol" id="ageSol" placeholder="" required>
+      <label for="ageSol">Idade:</label>
+    </div>
+
+    <div class="sol">
+      <input type="number" name="userId" class="class-1" placeholder="" required>
+      <label for="ageSol">Código:</label>
+    </div>
+
+  </fieldset>
+
+  <fieldset id="fieldTwoBlocks">
+
+  <fieldset id="fieldClassification">
+
+  <!-- 
+
+    status da solicitação 
+    data da solicitação 
+    tipo: exame ou consulta
+    classificação de risco: urgência ou normal
+    consulta: especialidade desejada
+    exame: tipo de exame 
+
+  -->
+
+  <div class="card">
+
+  <div id="checkBoxDiv">
+    <input type="radio" name="consultaOuExame" id="consulta" value="consulta" > Consulta
+    <input type="radio" name="consultaOuExame" id="exame" value="exame" > Exame
+  </div>
+
+  <div >
+    <div id="especialidadeDiv">
+
+     <input name="especialidade" id="especialidadeInput" list="especialidadeList">
+     <label for="especialidadeSol">Especialidade:</label>
+    <datalist id="especialidadeList">
+      <option value="Ortopedia"></option>
+      <option value="Cirurgia Geral"></option>
+      <option value="Clínica Médica"></option>
+      <option value="Ginecologia"></option>
+    </datalist>
+    </div>
+
+    <div id="tipoDeExameDiv">
+
+    <input name="tipoDeExameSol" id="tipoDeExameInput" list="tipo-de-exame-list">
+    <label for="tipoDeExameSol">Tipo de Exame:</label>
+        <datalist id="tipo-de-exame-list">
+          <option value="Ressonância"></option>
+          <option value="Tomografia"></option>
+          <option value="Raio-x"></option>
+          <option value="Ecocardiograma"></option>
+          <option value="Endoscopia"></option>
+          <option value="Ultrassom"></option>
+          <option value="Colonoscopia"></option>
+        </datalist>
+    </div>
+  </div>
+
+  </div>
+
+  </fieldset>
+
+
+<div id="checkBoxDiv2">
+
+    <input type="radio" name="classificacaoDeRisco" id="" value="Normal" >
+    <span style="color: rgb(76, 136, 206);"> Normal </span>
+    <br>
+     
+    <input type="radio" name="classificacaoDeRisco" id="" value="Pouco Urgente"> 
+    <span> Pouco Urgente</span>
+    <br>
+
+    <input type="radio" name="classificacaoDeRisco" id="" value="Urgente"> 
+     <span style="color: rgb(255, 147, 24);"> Urgente</span>
+    <br>
+
+    <input type="radio" name="classificacaoDeRisco" id="" value="Emergência" >
+    <span style="color: rgb(255, 6, 6);"> Emergência</span>
+   
+  </div>
+
+  <div class="card" >
+
+  <fieldset id="fieldOrigem">
+    <div class="sol">
+      <input type="text" name="unidadeSolicitanteSol" id="unidadeSolicitanteSol" placeholder="" required>
+      <label for="unidadeSolicitanteSol">Unidade Solicitante:</label>
+    </div>
+
+    <div class="sol">
+
+      <input type="text" name="medicoSolicitanteSol" id="medicoSolicitanteSol" placeholder="" required>
+      <label for="medicoSolicitanteSol">Médico Solicitante:</label>
+    </div>
+
+    <div class="sol">
+      <input type="text" name="crmSol" id="crmSol" placeholder="" required>
+      <label for="CRMSol">CRM:</label>
+    </div>
+  
+      <div class="sol">
+        <input type="text" name="especialidadeSol" id="especialidadeSol" placeholder="" required>
+        <label for="especialidadeSol">Especialidade:</label>
+      </div>
+  </fieldset>
+</div>
+
+</fieldset >
+
+  <fieldset id="lastField">
+    <div class="sol">
+      <textarea name="quadroClinicoSol" id="quadroClinicoSol" cols="80" rows="8"></textarea>
+      <label for="quadroClinicoSol">Quadro Clínico:</label>
+    </div>
+
+    <div class="sol">
+      <textarea name="justificativaSol" id="justificativaSol" cols="80" rows="8"></textarea>        
+      <label for="justificativaSol">Justificativa:</label>
+    </div>
+  </fieldset>
+
+  <div id="divBut">
+    <button type="submit" class="formBut" id="solicitarBut" onclick="solicitar()">Solicitar</button>
+  </div>
+
+  </form>
+  
+</main>
+
+<script src="/js/solicitations-script.js"></script>
+
+
+
+  

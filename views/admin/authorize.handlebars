@@ -1,0 +1,128 @@
+<link rel="stylesheet" href="/css/style-authorize.css">
+<header> 
+  <div class="sideBar">     
+    <div id="menuSideBar" class="">
+      <nav>
+        <button class="menuBut" onclick="mobileMenu()">
+            <div class="mobile-menu">
+            <div class="line1"></div>
+            <div class="line2"></div>
+            <div class="line3"></div>
+            </div>
+        </button>
+              
+        <ul class="nav-list" id="nav-list">
+          <li  class="menu-element-level-one"id="menu-level-one">
+            <button onclick="levelOneMenu()">
+              Atendimento
+            </button>
+            <div id="sub-list">
+              <ul class="sub-list">
+                <li class= "menu-element"><a href="">Agendamentos</a></li>
+                <li class= "menu-element"><a href="solicitations">Solicitações</a></li>
+                <li class= "menu-element"><a href="">Autorizar</a></li>
+                <li class= "menu-element"><a href="">Agendar</a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <div class="divSideBarBut">
+      <button value="" class="sideBarBut">
+        <img src="icons/architecture_building_home_house_property_icon_123288.ico" alt="" >
+      </button>
+      <button onclick="sair()" class="sideBarBut">
+        SAIR
+      </button>
+      </div>
+  </div>
+</header>
+
+<form action="/admin/authorize2" method="post">
+  <div class="container">
+    <h1>Autorizar</h1>
+
+    <div id="checkboxDiv">
+      <input type="radio" name="consultaOuExame" id="consulta" value="consulta">  Consulta
+      <input type="radio" name="consultaOuExame" id="exame" value="exame">  Exame
+    </div>
+    <br>
+
+    <div id="especialidadeDiv">
+    Especialidade: <input name="especialidadeAut" id="especialidadeInput" list="especialidadeList">
+    <datalist id="especialidadeList">
+      <option value="Ortopedia"></option>
+      <option value="Cirurgia Geral"></option>
+      <option value="Clínica Médica"></option>
+      <option value="Ginecologia"></option>
+    </datalist>
+    </div>
+    <div id="tipoDeExameDiv">        
+      Tipo de Exame: <input name="tipoDeExamnaeAut" id="tipoDeExameInput" list="tipo-de-exame-list">
+      <datalist id="tipo-de-exame-list">
+        <option value="Ressonância"></option>
+        <option value="Tomografia"></option>
+        <option value="Raio-x"></option>
+        <option value="Ecocardiograma"></option>
+        <option value="Endoscopia"></option>
+        <option value="Ultrassom"></option>
+        <option value="Colonoscopia"></option>
+      </datalist>
+    </div>
+    <br>
+
+    <div id="nameAut">
+          Nome: <input  type="text" name="nameAut">
+    </div> 
+  
+    <div class="divBut">
+        <button type="submit" onclick="buscar()" >Buscar</button>
+    </div>
+  </div>
+</form>
+
+
+<div id="solicitationsToAuthorize"  class="transparent-div">
+
+{{#each solicitations}}
+  <div id="solicitationsCard">
+    <div>
+      Grav.: {{gravidade}}
+    </div>
+    <div>
+      Data:
+    </div>
+    <div>
+        Nome: {{name}}
+    </div>
+    <div>
+        Idade: {{age}}
+    </div>
+    <div>
+        Tipo: {{tipo}}
+    </div>
+    {{exame}}
+     <div>
+        {{especialidade}}
+    </div>
+    <div>
+        <a href=""><button >Autorizar</button></a>
+    </div>
+  
+
+  </div>
+{{else}}
+
+{{/each}}
+</div>
+
+<script src="/js/script-authorize.js"></script>
+
+
+
+
+
+
+

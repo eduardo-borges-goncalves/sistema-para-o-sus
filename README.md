@@ -4,14 +4,41 @@ This is definitely my boldest project! So, because this, I decide write this in 
 
 # What The Aplicattion Wanna Fix
 
-Well, I work at public health care system in Brazil, and we have some problems. Our system it's not transparent. People request consultations with doctors and exams, and, this pass to an authorizathion. But, when the request are devolved ou damage, nobody is notify, and the user stay waiting forever, until he got tyred and go at the Central of Regulation to see whats happenning. This is really harmful to our user, because they wait so much more time for a exam. 
-Besides that, our user cant see how is his request. We have queues of users to our health services, and they dont know them positions. So, i start this project wanna fix this. 
+Well, I work at public health care system in Brazil, and we have some problems. Our system it's not transparent. People request consultations with doctors and exams, and, this pass to an authorizathion. But, when the request are devolved or damaged, nobody is notify, so the users keep waiting forever, until they got tired and go at the Central of Regulation to see whats happenning. This is really harmful to our users, because they wait so much more time for a exam then it's necessary. 
+Besides that, our users cant see how is them requests. We have queues of users to our health services, and they dont know them positions. So, i start this project wanna fix this. 
 
 # The stacks
 
-I started with what i knew at the time when I start: Javascript, Html e CSS. But, before, I used other stacks, like Node JS, Express, Mongo DB, to fix the data issue. This can be here when you are seeing this project or this dont, if not are, sorry. It's so many things to do, create the system and update the Readme properly. 
+This it maked with Node JS, Express, Mongo DB, Javascript, Handlebars, HTML, CSS etc. 
 
-# SIGSS - The Start
+
+# Starting the project
+
+Download the files to your workstation. 
+
+Download the Node JS: https://www.youtube.com/watch?v=__7eOCxJyow or https://www.youtube.com/watch?v=-cLzUD0TQY0
+
+Open the terminal. Write: 
+
+`node -v`
+
+Execute. If the system return the node version, you are ok. 
+
+Continue in the terminal. Open the directory that contain the files of this project. 
+
+Download the npm package with the command: 
+
+`npm install express mongooze express-handlebars connect-flash express-session body-parser`
+
+If everything worked fine, you are ready. Write the final command: 
+
+``node app.js``
+
+The system it's on! Open the browser and look for the URL: 
+
+`localhost:8082/admin/login`
+
+# SISRRA - The Start
 
 We start with login. I did that with user cache, saving the data in navigator and using Json. I dont know how much about that but i will study more this in time.
 
@@ -19,7 +46,7 @@ We start with login. I did that with user cache, saving the data in navigator an
 ![p1](https://user-images.githubusercontent.com/92747098/150890060-1dbbae04-79ab-438a-a2e6-43fa14698515.jpeg)
 
 
-We have a area to the user make his register. Its very beautiful and the data go to user cache. 
+We have a area to the user make his register. Its pretty fine and the data go to the user cache. 
 
 
 ![p2](https://user-images.githubusercontent.com/92747098/150890173-6b3b02c3-a38d-4870-b4af-7d7f85b42c37.jpeg)
@@ -60,9 +87,6 @@ To finish, if you wanna access and experiment, try here: https://eduardo-borges-
 # Next
 
 Next tasks: 
-- integrated this with the backend in node js / Express
-- connect with the database;
-- save the requests;
 - consum the request in the authorize page;
 - build the authorize page properly;
 - build the schedule page; 

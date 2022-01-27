@@ -4,8 +4,8 @@ This is definitely my boldest project! So, because this, I decide write this in 
 
 # What The Aplicattion Wanna Fix
 
-Well, I work at public health care system in Brazil, and we have some problems. Our system it's not transparent. People request consultations with doctors and exams, and, this pass to an authorizathion. But, when the request are devolved or damaged, nobody is notify, so the users keep waiting forever, until they got tired and go at the Central of Regulation to see whats happenning. This is really harmful to our users, because they wait so much more time for a exam then it's necessary. 
-Besides that, our users cant see how is them requests. We have queues of users to our health services, and they dont know them positions. So, i start this project wanna fix this. 
+Well, I work at public health care system in Brazil, and we have some problems. Our system it's not transparent. People request consultations with doctors and exams, and, this pass for an authorizathion process. But, when the request are devolved or denied, nobody is notify, so the users keep waiting forever, until they got tired and go at the Central of Regulation to see whats happenning. This is really harmful to our users, because they wait so much more time for a exam then it's necessary. 
+Besides that, our users cant see how is them requests. We have queues to our health services, and they dont know them positions. So, i started this project wanting fix this. 
 
 # The stacks
 
@@ -40,7 +40,7 @@ The system it's on! Open the browser and look for the URL:
 
 # SISRRA - The Start
 
-We start with login. I did that with user cache, saving the data in navigator and using Json. I dont know how much about that but i will study more this in time.
+We start with login. I did that with user cache, saving the data in navigator and using Json. I dont know very much about that but i will study more in time.
 
 
 ![p1](https://user-images.githubusercontent.com/92747098/150890060-1dbbae04-79ab-438a-a2e6-43fa14698515.jpeg)
@@ -55,7 +55,7 @@ We have a area to the user make his register. Its pretty fine and the data go to
 After login, you are at the home-page. We havent so much here, but we have a side menu, a off button etc. 
 
 
-In the menu, we count with same pages that users will request same procedure, and other to the doctor authorize, and the last to the operator system schedule the exam or consultation. 
+In the menu, we count with same pages that users will request same procedure, and other for the doctor authorize, and the last to the operator system schedule the exam or consultation. 
 
 
 ![p3](https://user-images.githubusercontent.com/92747098/150890202-4e60dccb-45d2-4299-a7a4-ea1ce8d9a2d4.jpeg)

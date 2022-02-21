@@ -64,7 +64,7 @@ In the menu, we count with same pages that users will request same procedure, an
 It's been building. The idea it's the user can have an area to consult his request and look his notifications, but this will be build later then this page are ready. 
 
 
-# SIGSS - Solicitations and Authorize
+# SISRRA - Solicitations and Authorize
 
 Here are the page to the system operator request an appointment with a doctor or a exam. It's really complete. In the evolution system, the user data its send to the server, then it's stored at a Mongo DB Data Base, a NoSQL Data Base. 
 
